@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="1dp"
+    app:cardCornerRadius="1dp">
+
+    <TextView
+        android:id="@+id/characterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textColor="@color/green_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Name" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/characterAvatar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/image_view_character_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/characterName"
+        app:shapeAppearance="@style/roundedImageViewItemCharacter" />
+
+
+    <TextView
+        android:id="@+id/characterSpeciesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/species"
+        android:textColor="@color/green_dark"
+        android:textSize="@dimen/info_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/characterAvatar" />
+
+    <TextView
+        android:id="@+id/characterSpecies"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/green_dark"
+        android:textSize="@dimen/info_text_view"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/characterSpeciesTitle"
+        app:layout_constraintTop_toBottomOf="@id/characterAvatar"
+        tools:text="Species" />
+
+    <TextView
+        android:id="@+id/characterTypeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/type"
+        android:textColor="@color/green_dark"
+        android:textSize="@dimen/info_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/characterSpecies" />
+
+    <TextView
+        android:id="@+id/characterType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/green_dark"
+        android:textSize="@dimen/info_text_view"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/characterTypeTitle"
+        app:layout_constraintTop_toBottomOf="@id/characterSpecies"
+        tools:text="Type" />
+
+    <TextView
+        android:id="@+id/characterStatusTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/status"
+        android:textColor="@color/green_dark"
+        android:textSize="@dimen/info_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/characterType" />
+
+    <TextView
+        android:id="@+id/characterStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/green_dark"
+        android:textSize="@dimen/info_text_view"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/characterStatusTitle"
+        app:layout_constraintTop_toBottomOf="@id/characterType"
+        tools:text="Status" />
+
+    <TextView
+        android:id="@+id/characterGenderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/gender"
+        android:textColor="@color/green_dark"
+        android:textSize="@dimen/info_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/characterStatus" />
+
+    <TextView
+        android:id="@+id/characterGender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/green_dark"
+        android:textSize="@dimen/info_text_view"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/characterGenderTitle"
+        app:layout_constraintTop_toBottomOf="@id/characterStatus"
+        tools:text="Gender" />
+
+    <TextView
+        android:id="@+id/characterOriginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/origin"
+        android:textColor="@color/green_dark"
+        android:textSize="@dimen/info_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/characterGender" />
+
+    <TextView
+        android:id="@+id/characterOrigin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/green_dark"
+        android:textSize="@dimen/info_text_view"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/characterOriginTitle"
+        app:layout_constraintTop_toBottomOf="@id/characterGender"
+        tools:text="Origin" />
+
+    <TextView
+        android:id="@+id/characterLocationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/location"
+        android:textColor="@color/green_dark"
+        android:textSize="@dimen/info_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/characterOriginTitle" />
+
+    <TextView
+        android:id="@+id/characterLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/green_dark"
+        android:textSize="@dimen/info_text_view"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/characterLocationTitle"
+        app:layout_constraintTop_toBottomOf="@+id/characterOrigin"
+        tools:text="Location" />
+
+    <TextView
+        android:id="@+id/characterEpisodesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/episodes"
+        android:textColor="@color/green_dark"
+        android:textSize="@dimen/info_text_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/characterLocationTitle" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCharacterEpisodes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/characterEpisodesTitle" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/characterEpisodesTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_transparent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/margin_elements">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNameFilterTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/name_filter_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/nameFilter"
+            android:background="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/tvStatusFilterTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/seasons_filter"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:textColor="@color/black" />
+
+        <Spinner
+            android:id="@+id/seasonFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/transparent"
+            android:entries="@array/seasons" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/submitFilterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/green_primary"
+        android:text="@string/title_btn_apply"
+        android:textColor="@color/black" />
+
+</LinearLayout>
